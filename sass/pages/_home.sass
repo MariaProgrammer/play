@@ -35,12 +35,7 @@
     &__btn-reg
       @include flex-center-center
       width: 152px
-      height: 40px
-      background: $color-light-green
-      color: $color-white
-      font-size: 14px
-      text-transform: uppercase
-      border-radius: 25px
+      height: 40px      
     &__btn-burger
     &__burger
       width: 48px
@@ -310,17 +305,26 @@
         height: 16px
 
 .exclusive
+  &__cover
+    @include flex-center-between
   &__cards
+    padding-bottom: 30px
 
-    &__title
+  &__title
+    @include flex-center
+    margin-bottom: 25px
 
-    &__title-icon
+  &__title-icon
+    margin-right: 15px
 
-    &__title-h2
+  &__title-h2
+    font-size: 20px
+    text-transform: uppercase
+
 
 .swiper3
   width: 100%
-  height: 431px
+  height: 500px
   overflow: hidden
   &__slide-link
     color: $color-black
@@ -328,13 +332,18 @@
     text-decoration: none
 
   .swiper-wrapper
-    // height: calc((100% - 30px) / 2) !important;
-
+    height: calc((100% - 70px) ) !important
+    width: 100% !important
+    
+  // .swiper-slide
+  //   margin-right: 15px !important
   &__slide
-    width: 220px !important
+    min-width: 220px !important
     height: 208px !important
     overflow: hidden
     border-radius: 25px
+    
+
 
   &__slide-top
     width: 100%
@@ -397,6 +406,39 @@
         background: transparent
   .card__bottom.active
       transform: translateY(-60px)
-  .swiper-button-prev3
+  .swiper3__buttons
+    @include flex-center
+    gap: 10px
+    &-cover
+      @include flex-center
 
-  .swiper-button-next3
+.banner
+  
+  background: #e8e8e8
+		&__inner
+      @include flex-center-between
+      gap: 15px
+      padding-top: 30px
+      padding-bottom: 30px
+
+
+		&__left
+      border-radius: 15px
+      width: 100%
+      height: 208px
+      background: url('../img/banner-1.jpg') center / cover no-repeat
+
+      
+
+		&__link
+
+		&__plashka
+
+		&__right
+      width: 100%
+      height: 208px
+      border-radius: 15px
+      background: url('../img/banner-2.jpg') center / cover no-repeat
+
+
+  

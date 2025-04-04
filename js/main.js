@@ -213,9 +213,10 @@ const swiper2 = new Swiper('.swiper2', {
 const swiper3 = new Swiper(".swiper3", {
   slidesPerView: 5,
   grid: {
-    rows: 2,
+    rows: 2
+    
   },
-  spaceBetween: 30,  
+  spaceBetween: 15,  
   loop: false,
  
   navigation: {

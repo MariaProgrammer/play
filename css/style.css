@@ -431,7 +431,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1220px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -483,6 +483,29 @@ body {
   line-height: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button {
+  background: #2ecc71;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+.swiper__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 100%;
+  background: #2ecc71;
+}
+
+.swiper__button img {
+  width: 16px;
+  height: 16px;
 }
 
 .header {
@@ -541,11 +564,6 @@ body {
   justify-content: center;
   width: 152px;
   height: 40px;
-  background: #2ecc71;
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 25px;
 }
 
 .header .nav__burger {
@@ -886,9 +904,34 @@ body {
   height: 16px;
 }
 
+.exclusive__cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exclusive__cards {
+  padding-bottom: 30px;
+}
+
+.exclusive__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.exclusive__title-icon {
+  margin-right: 15px;
+}
+
+.exclusive__title-h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .swiper3 {
   width: 100%;
-  height: 431px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -898,8 +941,13 @@ body {
   text-decoration: none;
 }
 
+.swiper3 .swiper-wrapper {
+  height: calc((100% - 70px)) !important;
+  width: 100% !important;
+}
+
 .swiper3__slide {
-  width: 220px !important;
+  min-width: 220px !important;
   height: 208px !important;
   overflow: hidden;
   border-radius: 25px;
@@ -986,4 +1034,42 @@ body {
 
 .swiper3 .card__bottom.active {
   transform: translateY(-60px);
+}
+
+.swiper3 .swiper3__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.swiper3 .swiper3__buttons-cover {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  background: #e8e8e8;
+}
+
+.banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.banner__left {
+  border-radius: 15px;
+  width: 100%;
+  height: 208px;
+  background: url("../img/banner-1.jpg") center/cover no-repeat;
+}
+
+.banner__right {
+  width: 100%;
+  height: 208px;
+  border-radius: 15px;
+  background: url("../img/banner-2.jpg") center/cover no-repeat;
 }
