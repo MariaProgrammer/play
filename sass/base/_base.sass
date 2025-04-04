@@ -1,0 +1,78 @@
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+@font-face 
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff") format("woff")
+  font-display: swap
+  font-weight: 400
+  font-style: normal
+@font-face 
+  font-family: "Inter"
+  src: url("../fonts/Inter-Regular.woff") format("woff")
+  font-display: swap
+  font-weight: 500
+  font-style: normal
+
+body
+  font-family: "Inter"
+  font-weight: 400
+  font-size: 16px
+  line-height: 1.4  
+  background-color: $color-white
+
+.container-lg
+  max-width: 1932px
+  padding: 0 30px
+  margin: 0 auto
+
+.container
+  max-width: 1200px
+  padding: 0 30px
+  margin: 0 auto
+  
+
+
+.btn-reset
+  padding: 0
+  border: none
+  background: transparent
+  cursor: pointer
+
+.visually-hidden 
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+
+
+.list-reset 
+  padding: 0
+  margin: 0
+  list-style: none
+
+
+.stop-scroll 
+  overflow: hidden
+
+
+.disable-scroll 
+  position: relative
+  overflow: hidden
+  height: 100vh
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+
